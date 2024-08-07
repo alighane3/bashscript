@@ -4,7 +4,7 @@
 # Using: change "logFile" and run "bash unique-requests-hourly.sh"
 
 DTE="$(date +%d)/$(date +%b)"
-FLE="./output/hourly-log-httpd-"$(date +%d)-$(date +%b)".txt"
+FLE="./output/unique-requests-hourly-"$(date +%d)-$(date +%b)".txt"
 logFile="/var/log/httpd/domains/example.com.log"
 
 mkdir -p ./output
