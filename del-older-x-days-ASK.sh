@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Note: Before deleting a file or directory, it needs to confirm the deletion. If no days inputed, will use 7 days as default.
-# Using: bash del-older-x-days.sh /home/destination 7
+# Using: bash del-older-x-days-ASK.sh /home/destination 7
 # (It keeps the files and directories of the last 7 days and deletes the others.)
 
 if [ $# -eq 0 ]; then
