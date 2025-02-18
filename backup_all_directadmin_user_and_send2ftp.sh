@@ -11,7 +11,7 @@ CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
 DAY_OF_WEEK=$(date +%A)
 FTP_TARGET_DIR="$FTP_BASE_DIR/$DAY_OF_WEEK"
 
-echo "-----------------------------"
+echo "-----------------------------" | tee -a "$LOG_FILE"
 echo "[$CURRENT_TIME] Backup process started" | tee -a "$LOG_FILE"
 echo "[$CURRENT_TIME] Backup for day: $DAY_OF_WEEK in ftp directory $FTP_TARGET_DIR" | tee -a "$LOG_FILE"
 
@@ -39,3 +39,4 @@ EOF
 
 CURRENT_TIME=$(date "+%Y-%m-%d %H:%M:%S")
 echo "[$CURRENT_TIME] Backup process completed" | tee -a "$LOG_FILE"
+
